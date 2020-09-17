@@ -1,0 +1,273 @@
+html, body, #root {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: Josefin Sans;
+}
+
+.forecast-icon{
+	pointer-events: none;
+	margin-right: 10px; 
+}
+
+#left-panel{
+	padding-left: 50px;
+	display: inline-block;
+	background-color: rgb(242, 251, 255);
+	width: 63%;
+	height: 100%;
+	color: rgb(34, 45, 94);
+	background-repeat: repeat;
+	overflow: scroll;
+}
+
+input[name="query"]{
+	padding-left: 40px;
+	font-size: 18px;
+	margin-top: 50px;
+	border: none;
+	border-radius: 10px;
+	height: 50px;
+	width: 320px;
+}
+
+.search-icon{
+	position: relative;
+	left: -345px;
+}
+
+input[type="text"]:focus, select:focus, button:focus { outline: none; }
+
+select{
+	background-color: rgb(242, 251, 255);
+	border: none;
+	margin-left: 30px;
+	font-size: 16px;
+}
+
+#title{
+	font-size: 32px;
+	margin-top: 40px;
+}
+
+#title span { font-weight: 300; }
+
+ul { list-style-type: none; }
+
+#place-list{
+	margin-top: 60px;
+	padding-left: 0px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	height: 250px;
+}
+
+#place-list > li{
+	display: inline-block;
+	margin: 0 20px;
+}
+
+#place-list > li> img{ border-radius: 10px; }
+
+#place-list > li > p{ text-align: center; }
+
+#place-list > li > button{
+	background-color: rgb(242, 251, 255);
+	height: 190px;
+	width: 150px;
+	border-radius: 10px;
+	position: relative;
+	bottom: 127px;
+}
+
+#places-form{
+	width: 90%;
+	background-color: white;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+#places-form > label, #places-form > h1{
+	display: block;
+	margin: 20px 0;
+	text-align: center;
+}
+
+#form-button{
+	background-color: rgb(242, 251, 255);
+	margin: 0 auto;
+	display: block;
+	border: 2px solid #008CBA;
+	border-radius: 10px;
+}
+
+#places-form > i { text-align: right; }
+
+input[name="url"] { margin-left: 5px; }
+
+#forecast-list{
+	padding-left: 0;
+	width: 95%;
+}
+
+#forecast-list li{
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+li > span { display: inline-block; }
+
+.forecast-date{ width: 20%; }
+
+.forecast-humidity { width: 15%; }
+
+.forecast-icons { width: 10%; }
+
+.forecast-temp-min { width: 8% }
+
+.forecast-temp-max { width: 8% }
+
+.progress-bar{
+	display: inline-block;        
+	width: 35%;
+	border-bottom: 2px rgb(0, 0, 0) dashed;
+}
+
+.progress{
+	display: inline-block;
+	border-bottom: 2px red solid;
+	margin: 0;
+}
+
+#detail-list{
+	position: absolute;
+	width: 270px;
+	height: 150px;
+	background-color: white;
+	overflow-y: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
+	padding-left: 20px;
+	border-radius: 20px;
+}
+
+#detail-list:hover { z-index: 1 }
+
+#detail-list > li{
+	display: inline-block;
+	width: 50px;
+	height: 100px;
+	font-size: 16px;
+	border: 1px solid rgb(211, 211, 211);
+	border-radius: 10px;
+	margin-top: 10px;
+	text-align: center;
+	margin-right: 20px;
+	transition: all linear 0.8s;
+	padding-right: 
+}
+
+.highlight-detail{
+	position: relative;
+	top: 20px;
+	background-color: rgb(29, 29, 71);
+	transition: all linear 0.8s;
+	color: white;
+}
+
+#right-panel{
+	display: inline-block;
+	background-color: rgb(15, 13, 60);
+	width: 37%;
+	height: 100%;
+	padding-top: 30px;
+	position: fixed;
+	top: 0;
+	color: white;
+}
+
+#right-panel button{
+	background-color: rgb(15, 13, 50);
+	color: white;
+	border: none;
+	font-family: Josefin Sans;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top
+}
+
+#notif{
+	margin-right: 20px;
+	margin-left: 50px;
+}
+
+#places-button { margin-right: 160px; }
+
+#right-panel img{
+	position: relative;
+	top: 15px;
+	border-radius: 10px;
+}
+
+.fa-2x { color: dodgerblue; }
+
+#icon-span, #date-span{
+	display: inline-block;
+	width: 15%;
+}
+
+#weather-report{
+	margin: 80px auto 0 auto;
+	text-align: center;
+}
+
+#date-span h1, #date-span p { margin: 10px 0; }
+
+#weather-temp{
+	font-size: 80px;
+	margin: 20px 0;
+}
+
+#graph { margin-left: 50px; }
+
+#graph:hover { z-index: 1; }
+
+#graph-heading{
+	font-size: 35px;
+	margin: 50px 0 20px 0;
+}
+
+#graph-box{
+	width: 350px;
+	height: 270px;
+	border-left: 3px dotted white;
+	border-bottom: 3px dotted white;
+	padding-left: 40px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	display: flex;
+	align-items: flex-end;
+}
+
+.bar{
+	width: 15px;
+	margin: 0 40px 0 0;
+	border: none;
+	display: inline-block;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.normal-bar{
+	background-color: rgb(35, 35, 77);
+	transition: all linear 0.8s;
+}
+
+.highlighted-bar{
+	background-color: rgb(248, 197, 0);
+	transition: all linear 0.8s;
+}
+
+li > p { margin: 15px 0; }
